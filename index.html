@@ -1005,5 +1005,14 @@
       navLeft.classList.toggle('active');
     });
 
+     document.addEventListener('click', (e) => {
+    if (
+      !navLeft.contains(e.target) &&
+      !hamburger.contains(e.target)
+    ) {
+      navLeft.classList.remove('active');
+    }
+  });
+
   </script>
 </html>
